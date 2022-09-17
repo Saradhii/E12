@@ -6,8 +6,8 @@ const Home = () => {
     <>
      <div className='home'>
          <div>
-         <span>PROJECT E-12</span>
-         <p>SIGN-UP OR LOGIN TO CONTINUE</p>
+         {/* <span>PROJECT E-12</span>
+         <p>SIGN-UP OR LOGIN TO CONTINUE</p> */}
          </div>
      </div>
     </>

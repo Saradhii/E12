@@ -6,11 +6,13 @@ const Signup = () => {
     <div className='signupform'>
       <div>
       <form>
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
-      <input type="submit" value="Submit"></input>
+      <label for="fname">Name</label>
+      <input type="text" name="name" placeholder="Your name.."></input>
+      <label for="lname">Email</label>
+      <input type="text" name="email" placeholder="Your email.."></input>
+      <label for="lname">Password</label>
+      <input type="password"  name="lastname" placeholder="Your password.."></input>
+      <input type="submit" value="SIGN-UP"></input>
       </form>
       </div>
     </div>
