@@ -152,7 +152,7 @@ input[type=text],input[type=password], select {
 }
 .profilecont1{
     width:90%;
-    height: 80vh;
+    height: 100vh;
     margin:auto;
     padding:10px;
     /* border: 1px solid rgb(16, 226, 16); */
@@ -160,7 +160,7 @@ input[type=text],input[type=password], select {
     margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(3,30%);
-    gap:3%;
+    gap:10px;
 }
 .profilecont1>div{
     border:1px solid green;
@@ -210,6 +210,7 @@ input[type=text],input[type=password], select {
         border-radius: 5px;
         display: grid;
         grid-template-columns: repeat(1,100%);
+        padding-bottom: 100px;
     }
     .profilecont1>div{
         /* border:1px solid green; */
@@ -220,6 +221,5 @@ input[type=text],input[type=password], select {
     .profile{
         background-color: rgb(24, 23, 23);
         height: fit-content;
-        padding-bottom: 30px;
     }
   }
