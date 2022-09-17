@@ -6,11 +6,11 @@ const Header = () => {
     <>
      <div className='header'>
      <div className='hlogo'>
-        <img src="https://www.svgrepo.com/show/9733/triangle.svg" alt="logo" />
+     <Link to="/"><img src="https://www.svgrepo.com/show/9733/triangle.svg" alt="logo" /></Link>
       </div>
       <div className='hbuttons'>
-         <button><Link to="/signup">LOGIN</Link></button>
-         <button><Link to="/login">SIGN UP</Link></button>
+         <button><Link to="/login">LOGIN</Link></button>
+         <button><Link to="/signup">SIGN UP</Link></button>
       </div>
      </div>
     </>
