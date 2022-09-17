@@ -37,7 +37,7 @@ const Signup = () => {
       e.preventDefault();
       setOpen2(true);
       console.log(formData)
-      axios.post(`https://assignment91mobiles.herokuapp.com/user/signup`, formData, {
+      axios.post(`https://e12b.herokuapp.com/user/signup`, formData, {
           headers: { "Content-Type": "application/json" },
         }).then((responce) => {
           setOpen2(false);

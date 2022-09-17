@@ -41,16 +41,16 @@ const Login = () => {
   const handleSubmit = (e)=>{
     e.preventDefault();
     setOpen2(true);
-    axios.post(`https://assignment91mobiles.herokuapp.com/user/signin`, formData, {
+    axios.post(`https://e12b.herokuapp.com/user/signin`, formData, {
     headers: { "Content-Type": "application/json" },
     }).then((responce) => {
     const { data } = responce;
     console.log(data);
     setOpen2(false);
     if (data.message == "Logged in") {
-      localStorage.setItem("DoctorLogintoken", data.token);
-      localStorage.setItem("DoctorLoginid", data.user._id);
-      localStorage.setItem("DoctorName",data.user.name);
+      localStorage.setItem("e12token", data.token);
+      localStorage.setItem("e12id", data.user._id);
+      localStorage.setItem("e12name",data.user.name);
       setOpen(true);
     } else {
       setOpen1(true);

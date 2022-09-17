@@ -11,6 +11,12 @@
 }
 .hbuttons{
     padding:15px;
+    display: flex;
+}
+.hbuttons h3{
+    color:aliceblue;
+    margin-right: 5px;
+    margin-top: 0%;
 }
 .hbuttons a{
     text-decoration: none;
@@ -119,7 +125,8 @@ input[type=text],input[type=password], select {
 
 .profile{
     background-color: rgb(24, 23, 23);
-    height: 100vh;
+    height: fit-content;
+    padding: 20px;
 }
 .profilecont0{
     width:90%;
@@ -148,18 +155,42 @@ input[type=text],input[type=password], select {
     height: 80vh;
     margin:auto;
     padding:10px;
-    border: 1px solid rgb(16, 226, 16);
+    /* border: 1px solid rgb(16, 226, 16); */
     border-radius: 5px;
     margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap:3%;
 }
-
-#alert-dialog-title{
+.profilecont1>div{
+    border:1px solid green;
+    margin-left: 50px;
+    height:200px;
+    padding: 10px;
+}
+.popup{
+    padding: 30px;
     background-position: center;
     background-size: cover;
     background-image: url("https://wallpaperaccess.com/full/628807.jpg");
     min-height: 100%;
-    color:aliceblue
+    color:aliceblue;
 }
+
+.nftcard{
+    border:1px solid green;
+    text-align: center;
+    color:aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.nftcard img{
+    width:80%;
+    height:80%;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 600px) {
     .signupform>div{
         width:90%;
@@ -170,5 +201,25 @@ input[type=text],input[type=password], select {
         width:90%;
         margin: auto;
         padding-top: 20vh;
+    }
+    .profilecont1{
+        width:90%;
+        height: fit-content;
+        margin:auto;
+        /* border: 1px solid rgb(16, 226, 16); */
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+    }
+    .profilecont1>div{
+        /* border:1px solid green; */
+        height:200px;
+        padding: 10px;
+        margin-left: 5px;
+    }
+    .profile{
+        background-color: rgb(24, 23, 23);
+        height: fit-content;
+        padding-bottom: 30px;
     }
   }
