@@ -1,0 +1,27 @@
+.header{
+    width:100%;
+    height:60px;
+    background-color: rgb(24, 23, 23);
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+
+}
+.hlogo>img{
+    height:100%;
+}
+.hbuttons>button{
+     border:none;
+     width:70px;
+     height:30px;
+     margin-left:4px;
+}
+.home{
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://wallpaper.dog/large/209771.jpg");
+    min-height: 100%;
+    height:100vh;
+    z-index: -1;
+}
